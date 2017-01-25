@@ -4,7 +4,7 @@
 
 1. I have found out an amazing article on automatic threshold detection for Canny Algorithm which I have implemented in the code. What the logic does is it takes median from the pixels of the provided image and then calculates threshold values using 1:3 ratio by putting sigma = 0.33
 
-Attribution: http://www.pyimagesearch.com/2015/04/06/zero-parameter-automatic-canny-edge-detection-with-python-and-opencv/
+	Attribution: http://www.pyimagesearch.com/2015/04/06/zero-parameter-automatic-canny-edge-detection-with-python-and-opencv/
 
 2. For extraplotation of Line Segments, I simply iterated all the lines available after Hough Transformation and obtained maximum slopes, segment lengths and Y-Intercepts. Based on this values, a single line was created for each side of the lane within region of interest. Then these two lines were added into original image through linear blending function provided.
 
@@ -23,11 +23,11 @@ Attribution: http://www.pyimagesearch.com/2015/04/06/zero-parameter-automatic-ca
     f. Extrapolation of Line - Already explained above.
     g. Linear blending: of Lines generated after extrapolation of HoughLines with Original Source image.
 
-Attributions:
+	Attributions:
 
-1. http://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_houghlines/py_houghlines.html
-2. http://docs.opencv.org/trunk/da/d22/tutorial_py_canny.html
-3. https://alyssaq.github.io/2014/understanding-hough-transform/
+		1. http://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_houghlines/py_houghlines.html
+		2. http://docs.opencv.org/trunk/da/d22/tutorial_py_canny.html
+		3. https://alyssaq.github.io/2014/understanding-hough-transform/
 
 **Shortcomings and Possible improvements**
 
