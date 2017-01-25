@@ -11,17 +11,23 @@
 3. Rest of the things were similar to the process which was taught in classroom lectures. To conclude, the pipeline takes images one after another and process them in a following manner:
 
     a. Color to Grayscale Conversion
+	
     b. Gaussian Blur for smoothing of edges and removing noise - Input parameter to be provided: Kernel size
-    c. Canny Edge Detection - In order to detect only edges from a Gaussian Blurred Grayscale image.
+    
+	c. Canny Edge Detection - In order to detect only edges from a Gaussian Blurred Grayscale image.
         The Edge detection Algorithm works on the principle of calculating gradient at different points in image.
         The gradients at edge will be higher due to change in intensity of bright and dark pixel.
-    d. Region of Interest Mask - To consider only portion where preferably Lane Lines will be present.
+    
+	d. Region of Interest Mask - To consider only portion where preferably Lane Lines will be present.
         If we don't do that, many unwanted edges will be detected.
-    e. Hough Transformation - To find out the lines based on votes we get for a particular grid in Hough Space.
+    
+	e. Hough Transformation - To find out the lines based on votes we get for a particular grid in Hough Space.
             The higher the votes, the more intersection of lines in Hough Space is denoted. 
             And the higher number of intersection points indicates a connected line in Image Space.
-    f. Extrapolation of Line - Already explained above.
-    g. Linear blending: of Lines generated after extrapolation of HoughLines with Original Source image.
+    
+	f. Extrapolation of Line - Already explained above.
+    
+	g. Linear blending: of Lines generated after extrapolation of HoughLines with Original Source image.
 
 	Attributions:
 
