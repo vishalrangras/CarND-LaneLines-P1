@@ -1,4 +1,4 @@
-## Self Driving Car Nanodegree - Project 1 - Detecting Car Lane Lines
+## Detecting Car Lane Lines
 
 **Notes**
 
